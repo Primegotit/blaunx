@@ -30,7 +30,7 @@ nav{
 
 nav h4{
     font-weight: 100;
-
+    color: var(--primary-color);
 }
 
 #page1-container{
@@ -60,13 +60,17 @@ nav h4{
     color: var(--text-color);
 }
 
-#middle-box h1{
+
+#middle-box h1 {
     color: var(--text-color);
     font-weight: 900;
-    /* font-size: 130px; */
     font-size: 10vw;
+    letter-spacing: 10px;
+}
 
-    letter-spacing: 10px ;
+#logo span {
+    display: inline-block;
+    transition: transform 0.4s ease, opacity 0.4s ease, filter 0.4s ease;
 }
 
 button{
@@ -90,6 +94,7 @@ button{
     cursor: pointer;
     transition: all 0.4s ease;
     z-index: 1;
+    font-size: 1.0vw;
 }
 
 .destiny-btn::before {
@@ -99,7 +104,7 @@ button{
     bottom: 0;
     width: 100%;
     height: 0%;
-    background: #bf0603;
+    background: var(--primary-color);
     transition: height 0.4s ease;
     z-index: -1;
 }
@@ -110,7 +115,7 @@ button{
 
 .destiny-btn:hover {
     color: white;
-    border-color: #bf0603;
+    border-color: var(--primary-color);
 
 }
 #bottom-container{
@@ -122,7 +127,7 @@ button{
     flex-direction: row;
     justify-content: space-evenly;
     color: gray;
-    color: #bf0603;
+    color: var(--primary-color);
 }
 
 #bottom-container ul li{
@@ -135,9 +140,12 @@ button{
 }
 
 @media(max-width: 800px){
+    #middle-box{
+            width:90%;
+    }
 #middle-box h1{
 
-    font-size: 13vw;
+    font-size: 10vw;
 
   
 }

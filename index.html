@@ -24,7 +24,7 @@
             <div id="middle-box">
                 <h2>Welcome to </h2>
                 <br>
-                <h1>BLAUNX</h1>
+                <h1  id="logo">BLAUNX</h1>
                 <br>
                 <div>
                     <button class="destiny-btn">Choose your destiny</button>
@@ -86,6 +86,95 @@ document.querySelectorAll("#bottom-container li").forEach(item => {
             symbols[Math.floor(Math.random() * symbols.length)];
     }, Math.random() * 3000 + 1000); // changes every 1-4 seconds
 });
+
+
+
+//for the blaunx logo animation
+
+const logo = document.getElementById("logo");
+
+const originalText = "BLAUNX";
+
+const russianChars = [
+    "Ж","Щ","Ю","Я","Ф","Ц","Ч","Ш",
+    "Ы","Э","Б","Г","Д","З","И","Й",
+    "Ӝ","Ӟ","Ӣ","Ӧ","Ѫ","Ҩ"
+];
+
+// build spans
+function build() {
+    logo.innerHTML = originalText
+        .split("")
+        .map(l => `<span>${l}</span>`)
+        .join("");
+    return [...document.querySelectorAll("#logo span")];
+}
+
+let spans = build();
+
+function glitchCycle() {
+    let order = [...spans].reverse(); // RIGHT → LEFT
+
+    order.forEach((span, i) => {
+
+        setTimeout(() => {
+
+            const original = span.textContent;
+
+            // STEP 1: glitch in
+            span.style.opacity = "0";
+            span.style.transform = "translateY(10px)";
+            span.style.filter = "blur(6px)";
+
+            setTimeout(() => {
+
+                span.textContent =
+                    russianChars[Math.floor(Math.random() * russianChars.length)];
+
+                span.style.opacity = "1";
+                span.style.transform = "translateY(0)";
+                span.style.filter = "blur(0px)";
+
+                // STEP 2: return to original after short delay
+                setTimeout(() => {
+                    span.style.opacity = "0";
+                    span.style.transform = "translateY(-5px)";
+                    span.style.filter = "blur(6px)";
+
+                    setTimeout(() => {
+                        span.textContent = original;
+
+                        span.style.opacity = "1";
+                        span.style.transform = "translateY(0)";
+                        span.style.filter = "blur(0px)";
+                    }, 200);
+
+                }, 300);
+
+            }, 200);
+
+        }, i * 300); // speed of right → left
+    });
+
+    // after full cycle → pause on clean text
+    setTimeout(() => {
+        resetPause();
+    }, order.length * 300 + 1200);
+}
+
+function resetPause() {
+    spans.forEach(span => {
+        span.textContent = span.textContent; // keep clean BLAUNX
+        span.style.opacity = "1";
+        span.style.filter = "none";
+        span.style.transform = "none";
+    });
+
+    setTimeout(glitchCycle, 2500); // pause before next cycle
+}
+
+glitchCycle();
+
 </script>
 </body>
 </html>
