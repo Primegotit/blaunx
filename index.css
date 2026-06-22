@@ -99,7 +99,7 @@ button{
     bottom: 0;
     width: 100%;
     height: 0%;
-    background: red;
+    background: #bf0603;
     transition: height 0.4s ease;
     z-index: -1;
 }
@@ -110,7 +110,7 @@ button{
 
 .destiny-btn:hover {
     color: white;
-    border-color: red;
+    border-color: #bf0603;
 
 }
 #bottom-container{
@@ -122,12 +122,12 @@ button{
     flex-direction: row;
     justify-content: space-evenly;
     color: gray;
-    color: rgb(252, 34, 34);
+    color: #bf0603;
 }
 
 #bottom-container ul li{
     font-size: 1vw;
-    font-weight: 500;
+    font-weight: 00;
 }
 
 #bottom-container li {
