@@ -15,11 +15,11 @@
 }
 #page1{
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.096) , rgba(0, 0, 0, 0)) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.87) , rgba(0, 0, 0, 0.205)) ;
     color: var(--text-color);
     font-family:var(--font-name);
     position: relative;
-    
+
 }
 nav{
     display: flex;
