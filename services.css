@@ -5,12 +5,13 @@
     align-items: center;
     flex-direction: column;
     height:max-content;
+    padding: 20px;
 }
 
 
 nav h3{
     font-weight: 800;
-    color: var(--primary-color);
+    color: white
     
 }
 
@@ -24,6 +25,7 @@ nav h3{
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+
 }
 
 
@@ -88,7 +90,23 @@ nav h3{
   background-position: center;
   background-size: cover;
 }
+.image1{
+  background: url(images/lee-campbell-DtDlVpy-vvQ-unsplash\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+}
 
+.image2{
+  background: url(images/rob-wingate-UG9LOi8BJWQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.image3{
+  background: url(images/milad-fakurian-LZwjTfjbo6Q-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
 .title {
   color: var(--primary-color);
   font-size: 1.125rem;
@@ -123,4 +141,9 @@ nav h3{
 
 .action:hover span {
   transform: translateX(4px);
+}
+
+
+#bottom-container{
+    padding:40px;
 }
