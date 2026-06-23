@@ -1,4 +1,10 @@
-
+#page2{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.87) , rgba(0, 0, 0, 0.205)) ;
+    color: var(--text-color);
+    font-family:var(--font-name);
+    position: relative;
+}
 #page1-container{
     display: flex;
     justify-content: center;
@@ -133,6 +139,11 @@ nav h3{
   background-color: var(--primary-color);
   padding: 4px 8px;
   border-radius: 4px;
+  transition: all 0.3s ;
+}
+
+.action:hover{
+    transform: scale(1.1);
 }
 
 .action span {
