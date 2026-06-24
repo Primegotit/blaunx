@@ -1,9 +1,16 @@
 #page2{
-    height: 100vh;
+    height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.87) , rgba(0, 0, 0, 0.205)) ;
     color: var(--text-color);
     font-family:var(--font-name);
     position: relative;
+}
+
+
+#page2 .content a:nth-of-type(1){
+    border: none;
+    padding: 0px;
+    
 }
 #page1-container{
     display: flex;
@@ -139,7 +146,8 @@ nav h3{
   background-color: var(--primary-color);
   padding: 4px 8px;
   border-radius: 4px;
-  transition: all 0.3s ;
+  transition: all 0.4s ;
+  border: none;
 }
 
 .action:hover{
