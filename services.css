@@ -145,6 +145,19 @@ nav h3{
   background-position: center;
   background-size: cover;
 }
+
+.image4{
+  background: url(images/evgeniy-smersh-wMMw8ZEs6Iw-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.image5{
+  background: url(images/altumcode-oZ61KFUQsus-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .title {
   color: var(--primary-color);
   font-size: 1.125rem;
