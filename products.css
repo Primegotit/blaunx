@@ -1,4 +1,4 @@
-#page2{
+#page3{
     height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.87) , rgba(0, 0, 0, 0.205)) ;
     color: var(--text-color);
@@ -7,7 +7,7 @@
 }
 
 
-#page2 .content a:nth-of-type(1){
+#page3 .content a:nth-of-type(1){
     border: none;
     padding: 0px;
     
@@ -21,7 +21,7 @@
     padding: 20px;
 }
 
-#page2 nav{
+#page3 nav{
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -29,7 +29,7 @@
 }
 
 
-#page2 nav  a{
+#page3 nav  a{
   color: var(--primary-color);
   border: none;
   border-radius: 40px;
@@ -37,7 +37,7 @@
   color: var(--text-color);
 }
 
-#page2 nav a:nth-of-type(1){
+#page3 nav a:nth-of-type(2){
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
   border-radius: 40px;
