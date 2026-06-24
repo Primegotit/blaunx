@@ -203,6 +203,54 @@ nav h3{
   background-size: cover;
 }
 
+
+
+
+
+.code1{
+  background: url(images/juanjo-jaramillo-mZnx9429i94-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.code2{
+  background: url(images/altumcode-oZ61KFUQsus-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.code3{
+  background: url(images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.graphic1{
+  background: url(images//bottle2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.graphic2{
+  background: url(images//bottle3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.graphic3{
+  background: url(images//bottle4.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 .title {
   color: var(--primary-color);
   font-size: 1.125rem;
