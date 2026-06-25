@@ -149,6 +149,7 @@ nav h3{
 
 .content {
   padding: 1.1rem;
+
 }
 
 .image {
@@ -268,7 +269,7 @@ nav h3{
 .social-btn-con{
   display: inline-flex;
   align-items: center;
-  padding: 4px 8px;
+  padding: 0px 8px;
   gap: 10px;
 }
 

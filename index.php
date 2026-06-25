@@ -29,8 +29,8 @@
                 <p>A revolutionary platform for the future.</p>
                 <br>
                 <div>
-                    <a class="destiny-btn" href="services.html">Choose your destiny</a>
-                    <a class="destiny-btn" href="founder.html">Founder's Information</a>
+                    <a class="destiny-btn" href="services.php">Choose your destiny</a>
+                    <a class="destiny-btn" href="founder.php">Founder's Information</a>
                 </div>
             </div>
             

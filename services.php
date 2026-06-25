@@ -18,7 +18,7 @@
         <div id="page1-container">
             <nav>
                 <a href="#">Services</a>
-                <a href="products.html">Products</a>
+                <a href="products.php">Products</a>
 
             </nav>
             <div id="services-box">
@@ -40,7 +40,7 @@
                         dolores, possimus pariatur animi temporibus nesciunt praesentium 
                         </p>
 
-                        <a class="action" href="products.html">
+                        <a class="action" href="products.php">
                         Find out more
                         <span aria-hidden="true">
                             →
@@ -65,7 +65,7 @@
                     dolores, possimus pariatur animi temporibus nesciunt praesentium 
                     </p>
 
-                    <a class="action" href="products.html">
+                    <a class="action" href="products.php">
                     Find out more
                     <span aria-hidden="true">
                         →
@@ -90,7 +90,7 @@
                     dolores, possimus pariatur animi temporibus nesciunt praesentium 
                     </p>
 
-                    <a class="action" href="products.html">
+                    <a class="action" href="products.php">
                     Find out more
                     <span aria-hidden="true">
                         →
@@ -115,7 +115,7 @@
                     dolores, possimus pariatur animi temporibus nesciunt praesentium 
                     </p>
 
-                    <a class="action" href="products.html">
+                    <a class="action" href="products.php">
                     Find out more
                     <span aria-hidden="true">
                         →
@@ -140,7 +140,7 @@
                     dolores, possimus pariatur animi temporibus nesciunt praesentium 
                     </p>
 
-                    <a class="action" href="products.html">
+                    <a class="action" href="products.php">
                     Find out more
                     <span aria-hidden="true">
                         →
