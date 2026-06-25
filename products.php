@@ -1,5 +1,62 @@
 <?php
+    include 'config/database.php';
+?>
 
+
+<?php
+
+    $image_card = [
+        [
+            'id' => '1',
+            'title' => 'Christ is the author of our profession',
+            'release_date' => 'November 2025',
+            'type' => 'JPG',
+            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator'
+
+        ],
+        [
+            'id' => '2',
+            'title' => "I am what they don't see",
+            'release_date' => 'September 2025',
+            'type' => 'PNG',
+            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator'
+
+        ],
+        [
+            'id' => '3',
+            'title' => "Loneliness of expertise",
+            'release_date' => 'February 2026',
+            'type' => 'PNG',
+            'tools' => 'Adobe Photoshop, Blender, Adobe Illustrator'
+
+        ]
+    ];
+
+
+    $web_card = [
+        [
+            'id' => '1',
+            'title' => 'Primegotit',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
+            'release_date' => 'November 2025',
+            'languages' => 'HTML, CSS, PHP, JS'
+
+        ],
+        [
+            'id' => '2',
+            'title' => 'Kostic',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
+            'release_date' => 'November 2025',
+            'languages' => 'React, Tailwind CSS'
+        ],
+        [
+            'id' => '3',
+            'title' => 'Trackway',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
+            'release_date' => 'November 2025',
+            'languages' => 'HTML, CSS, PHP, JS, Bootstrap'
+        ]
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -32,26 +89,33 @@
             <div id="services-box">
 
 
-                <!-- First product -->
+                <!-- WEB DEVELOPMENT SECTION -->
 
                 <div class="skill-container">
                     <div class="skill-top-banner">
                         <h3>Web development</h3>
                     </div>
                     <div class="skill-con">
+                    <?php foreach($web_card as $card):?>
+
                         <div class="card">
                             <div class="image code1"></div>
 
                             <div class="content">
                                 <a href="#" class="full-title">
                                     <span class="title">
-                                        Primegotit
+                                       <?php echo $card['title'] ?>
                                     </span>
                                 </a>
 
                                 <p class="desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                    dolores, possimus pariatur animi temporibus nesciunt praesentium
+                                    <?php echo $card['description'] ?>
+                                </p>
+                                <p class="desc">
+                                    <?php echo $card['release_date'] ?>
+                                </p>
+                                <p class="desc">
+                                    <?php echo $card['languages'] ?>
                                 </p>
                                 <div class="social-btn-con">
                                     <a class="action" href="https://primegotit.vercel.app/">View website<span aria-hidden="true">→</span></a>
@@ -59,250 +123,35 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="card ">
-                            <div class="image code2">
-
-                            </div>
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        Kostic
-                                    </span>
-                                </a>
-
-                                <p class="desc">
-                                    Release Date - 2025
-                                </p>
-                                <p class="desc">
-                                    Music Producer - Primegotit (Promise Siafwiyo)sdafsdafsadfsadfsdafasd
-                                </p>
-                                <div class="social-btn-con">
-                                    <a class="action" href="https://kostic.vercel.app/">View website<span aria-hidden="true">→</span></a>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="image code3">
-
-                            </div>
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        Nust Portal
-                                    </span>
-                                </a>
-
-                                <p class="desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                    dolores, possimus pariatur animi temporibus nesciunt praesentium
-                                </p>
-
-                                <div class="social-btn-con">
-                                    <a class="action" href="https://nustportal.vercel.app/">View website<span aria-hidden="true">→</span></a>
-
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
+                        
                     </div>
 
                 </div>
-                <!-- End of product section -->
+                <!-- End of WEB DEVELOPMENT SECTION -->
 
-
-                <!-- Second prodcut -->
-
-                <div class="skill-container">
-                    <div class="skill-top-banner">
-                        <h3>Music production</h3>
-                    </div>
-                    <div class="skill-con">
-                        <div class="card">
-                            <div class="image music1"></div>
-
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        Spotlight - Da'Blocks & Primegotit
-                                    </span>
-                                </a>
-
-                                <p class="desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                    dolores, possimus pariatur animi temporibus nesciunt praesentium
-                                </p>
-                                <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Spotify<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Audiomak<span aria-hidden="true">→</span></a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card ">
-                            <div class="image music2">
-
-                            </div>
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        Memories - Da Blocks & Limzy M
-                                    </span>
-                                </a>
-
-                                <p class="desc">
-                                    Release Date - 2025
-                                </p>
-                                <p class="desc">
-                                    Music Producer - Primegotit (Promise Siafwiyo)sadfsdfsdafsaf
-                                </p>
-                                <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Spotify<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Audiomak<span aria-hidden="true">→</span></a>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="image music3">
-
-                            </div>
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        Ben Frank - Trvppy T & Primegotit
-                                    </span>
-                                </a>
-
-                                <p class="desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                    dolores, possimus pariatur animi temporibus nesciunt praesentium
-                                </p>
-
-                                <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Spotify<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Audiomak<span aria-hidden="true">→</span></a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- End of prodcut sections -->
-
-
-                <!-- Third product -->
-
-                <div class="skill-container">
-                    <div class="skill-top-banner">
-                        <h3>3D Modelling</h3>
-                    </div>
-                    <div class="skill-con">
-                        <div class="card">
-                            <div class="image modelling1"></div>
-
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        Loneliness of expertise
-                                    </span>
-                                </a>
-
-                                <p class="desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                    dolores, possimus pariatur animi temporibus nesciunt praesentium
-                                </p>
-                                <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Instagram<span aria-hidden="true">→</span></a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card ">
-                            <div class="image modelling2">
-
-                            </div>
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        Christ is the author of our passion
-                                    </span>
-                                </a>
-
-                                <p class="desc">
-                                    Release Date - 2025
-                                </p>
-                                <p class="desc">
-                                    Music Producer - Primegotit (Promise Siafwiyo)sdafsdafsadfsadfsdafasd
-                                </p>
-                                <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Instagram<span aria-hidden="true">→</span></a>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="image modelling3">
-
-                            </div>
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        I am what they don't see
-                                    </span>
-                                </a>
-
-                                <p class="desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                    dolores, possimus pariatur animi temporibus nesciunt praesentium
-                                </p>
-
-                                <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Instagram<span aria-hidden="true">→</span></a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- End of product section -->
-
-                <!-- Third product -->
+                <!--  GRAPHIC DESIGN SECTION -->
 
                 <div class="skill-container">
                     <div class="skill-top-banner">
                         <h3>Graphic Design</h3>
                     </div>
                     <div class="skill-con">
+
+                    <?php foreach($image_card as $card):?>
                         <div class="card">
                             <div class="image graphic1"></div>
 
                             <div class="content">
                                 <a href="#" class="full-title">
                                     <span class="title">
-                                        Loneliness of expertise
+                                        <?php echo $card['title'] ?>
                                     </span>
                                 </a>
                                 <ul>
-                                    <li class="desc">Release Date - 2025</li>
-                                    <li class="desc">Type - JPG</li>
-                                    <li class="desc">Tools used - Adobe Photoshop, Adobe Illustrator, Blender</li>
+                                    <li class="desc">Release Date - <?php echo $card['release_date'] ?></li>
+                                    <li class="desc">Type - <?php echo $card['type'] ?></li>
+                                    <li class="desc">Tools used - <?php echo $card['tools'] ?></li>
                                 </ul>
                                 <div class="social-btn-con">
                                     <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
@@ -311,60 +160,11 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="card ">
-                            <div class="image graphic2">
-
-                            </div>
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        Christ is the author of our passion
-                                    </span>
-                                </a>
-                                <ul>
-                                    <li class="desc">Release Date - 2025</li>
-                                    <li class="desc">Type - JPG</li>
-                                    <li class="desc">Tools used - Adobe Photoshop, Adobe Illustrator, Blender</li>
-                                </ul>
-                                <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Instagram<span aria-hidden="true">→</span></a>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="image graphic3">
-
-                            </div>
-                            <div class="content">
-                                <a href="#" class="full-title">
-                                    <span class="title">
-                                        I am what they don't see
-                                    </span>
-                                </a>
-
-                                <ul>
-                                    <li class="desc">Release Date - 2025</li>
-                                    <li class="desc">Type - JPG</li>
-                                    <li class="desc">Tools used - Adobe Photoshop, Adobe Illustrator, Blender</li>
-                                </ul>
-
-                                <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Instagram<span aria-hidden="true">→</span></a>
-
-                                </div>
-                            </div>
-
-                        </div>
+                        <?php endforeach; ?>
                     </div>
 
                 </div>
-                <!-- End of product section -->
+                <!-- End of GRAPHIC DESIGN SECTION-->
 
 
             </div>
