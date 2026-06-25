@@ -208,23 +208,23 @@ nav h3{
 
 
 .code1{
-  background: url(images/juanjo-jaramillo-mZnx9429i94-unsplash.jpg);
+  background: url(images/primegotit.png);
   background-position: center;
-  background-size: cover;
+  background-size:contain;
 }
 
 
 .code2{
-  background: url(images/altumcode-oZ61KFUQsus-unsplash.jpg);
+  background: url(images/kostic.png);
   background-position: center;
-  background-size: cover;
+  background-size:contain;
 }
 
 
 .code3{
-  background: url(images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg);
+  background: url(images/nust-portal.png);
   background-position: center;
-  background-size: cover;
+  background-size:contain;
 }
 
 
