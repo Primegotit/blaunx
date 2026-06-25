@@ -39,22 +39,25 @@
             'title' => 'Primegotit',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
             'release_date' => 'November 2025',
-            'languages' => 'HTML, CSS, PHP, JS'
-
+            'languages' => 'HTML, CSS, PHP, JS',
+            'url' => 'https://primegotit.vercel.app/'
         ],
         [
             'id' => '2',
             'title' => 'Kostic',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
             'release_date' => 'November 2025',
-            'languages' => 'React, Tailwind CSS'
+            'languages' => 'React, Tailwind CSS',
+            'url' => 'https://kostic.vercel.app/'
+
         ],
         [
             'id' => '3',
             'title' => 'Trackway',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
             'release_date' => 'November 2025',
-            'languages' => 'HTML, CSS, PHP, JS, Bootstrap'
+            'languages' => 'HTML, CSS, PHP, JS, Bootstrap',
+            'url' => 'https://trackwayapp.vercel.app/'
         ]
     ];
 ?>
@@ -118,7 +121,7 @@
                                     <?php echo $card['languages'] ?>
                                 </p>
                                 <div class="social-btn-con">
-                                    <a class="action" href="https://primegotit.vercel.app/">View website<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url'] ?>">View website<span aria-hidden="true">→</span></a>
 
                                 </div>
                             </div>
