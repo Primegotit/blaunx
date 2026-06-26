@@ -115,6 +115,10 @@ nav h3{
 
     
 }
+
+.form-top-banner h3{
+    font-weight: 300;
+}
 .service-form{
     min-width: 80%;
     display: flex;

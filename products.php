@@ -118,7 +118,7 @@
                                     <?php echo $card['release_date'] ?>
                                 </p>
                                 <p class="desc">
-                                    <?php echo $card['languages'] ?>
+                                    Languages used - <?php echo $card['languages'] ?>
                                 </p>
                                 <div class="social-btn-con">
                                     <a class="action" href="<?php echo $card['url'] ?>">View website<span aria-hidden="true">→</span></a>
