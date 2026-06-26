@@ -101,6 +101,52 @@ nav h3{
     border-color: var(--primary-color);
 }
 
+.form-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+    background-color: #0a0a0a;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+    
+}
+.service-form{
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent ;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 70%;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+
+.input-container label{
+
+    color: var(--text-color);
+}
+.input-container input, textarea{
+    width: 100%;
+    padding: 8px 15px;
+    background: rgb(24, 24, 24);
+    border-radius: 0.3rem;
+    border: none;
+    color: var(--text-color);
+}
+
 
 
 .skill-container{
@@ -145,8 +191,8 @@ nav h3{
 .card {
     max-width: 46%;
     border-radius: 0.5rem;
-    background-color: #0a0a0a;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: #0a0a0a;
     border: 1px solid transparent;
     display: flex;
     padding: 1.1rem;
@@ -269,3 +315,64 @@ nav h3{
 #bottom-container{
     padding:40px;
 }
+
+@media(max-width: 960px){
+
+.skill-con{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.card {
+    max-width: 90%;
+    border-radius: 0.5rem;
+    background-color: #0a0a0a;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    display: flex;
+    padding: 1.1rem;
+    gap: 10px;
+}
+.service-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-img img{
+    width: 160px;
+    border-radius: 0.5rem;
+
+}
+
+}
+
+@media(max-width: 540px){
+
+.card {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    background-color: #0a0a0a;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    display: flex;
+    padding: 1.1rem;
+    gap: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.service-img img{
+    width: 190px;
+    border-radius: 0.5rem;
+
+}
+}
+

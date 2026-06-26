@@ -55,6 +55,68 @@
             <nav>
                 <a href="#">Services</a>
             </nav>
+
+            <div class="form-container">
+                <div class="form-top-banner">
+                    <h3>Enter or edit a service</h3>
+                </div>
+
+                <form action="" method="POST" class="card service-form" enctype="multipart/form-data">
+                    
+                    <div class="input-container">
+                        <label for="">Service name</label>
+                        <input type="text" name="service_name">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Description</label>
+                        <textarea name="service_desc" id="" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="">URL</label>
+                        <input type="text" name="service_url">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Image</label>
+                        <input type="file" name="service_img" accept="image/*">
+                    </div>
+                    
+                    <div class="social-btn-con">
+                        <a class="action" name="btn_add" href="#">Add<span aria-hidden="true">→</span></a>
+                        <a class="action" name="btn_edit" href="#">Edit<span aria-hidden="true">→</span></a>
+                        <a class="action" name="btn_delete" href="#">Delete<span aria-hidden="true">→</span></a>
+                    </div>
+                </form>
+
+            </div>
+
+            <?php
+
+                if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+                    $service_name = htmlspecialchars($_POST['service_name']);
+                    $service_desc = htmlspecialchars($_POST['service_desc']);
+                    $service_url = htmlspecialchars($_POST['service_url']);
+                    $service_img = $_POST['service_img'];
+                    $btn_add = $_POST['btn_add'];
+                    $btn_edit = $_POST['btn_edit'];
+                    $btn_delete = $_POST['btn_delete'];
+
+   
+                    
+                    if(isset($btn_add)){
+
+                        $service_card[] =  [
+                            'title' => $service_name,
+                            'description' => $service_desc,
+                            'url' => $service_url
+                        ];
+                    }
+                }
+
+            ?>
             <div id="services-box">
 
                 <div class="skill-container">
