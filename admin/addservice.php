@@ -4,13 +4,13 @@
         [
             'title' => 'Music production',
             'description' => 'Music Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
+                            dolores, pocxcbssimus pariatur animi temporibus nesciunt praesentium ',
             'url' => '#'
         ],
         [
             'title' => 'Web development',
             'description' => 'Web Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
+                            dolores, possadfdssimus pariatur animi temporibus nesciunt praesentium ',
             'url' => '#'
         ],
         [
@@ -40,54 +40,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blaunx</title>
-    <link rel="stylesheet" href="/global.css ">
-    <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="/services.css">
+    <link rel="stylesheet" href="../global.css ">
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="addservice.css">
 
 </head>
 <body>
     <video autoplay muted loop id="bg-video">
-        <source src="images/embers-in-the-dark-1920x1080.mp4" type="video/mp4">
+        <source src="../images/embers-in-the-dark-1920x1080.mp4" type="video/mp4">
 
     </video>
-    <div id="page2">
-        <div id="page1-container">
+    <div id="page2-admin">
+        <div id="page2-admin-container">
             <nav>
                 <a href="#">Services</a>
-                <a href="products.php">Products</a>
-
             </nav>
             <div id="services-box">
 
-                <?php foreach($service_card as $card):?>
-                
-                    <div class="card">
-                        <div class="image image1"></div>
-
-                        <div class="content">
-                            <a href="#">
-                                <span class="title">
-                                    <?php echo $card['title'] ?>
-
-                                </span>
-                            </a>
-
-                            <p class="desc">
-                                <?php echo $card['description'] ?>
-                            </p>
-
-                            <a class="action" href="<?php echo $card['url'] ?>">
-                            Find out more
-                            <span aria-hidden="true">
-                                →
-                            </span>
-                            </a>
-                        </div>
+                <div class="skill-container">
+                    <div class="skill-top-banner">
+                        <h3>Web development</h3>
                     </div>
-                <?php endforeach; ?>
 
+                    <div class="skill-con">
+                        <?php foreach($service_card as $card):?>
+                        
+                            <div class="card">
+                                <!-- <div class="image image1"></div> -->
 
+                                <div class="content">
+                                    <a href="#" class="full-title">
+                                        <span class="title">
+                                            <?php echo $card['title'] ?>
+
+                                        </span>
+                                    </a>
+
+                                    <p class="desc">
+                                        <?php echo $card['description'] ?>
+                                    </p>
+
+                                    <div class="social-btn-con">
+                                        <a class="action" href="<?php echo $card['url'] ?>">Edit<span aria-hidden="true">→</span></a>
+                                        <a class="action" href="<?php echo $card['url'] ?>">Delete<span aria-hidden="true">→</span></a>
+
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="service-img">
+                                    <img src="../images/703194929342567440.jpg" alt="">
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                
+                    </div>
+                </div>
                 <!-- axdsfafsdafs -->
 
 
