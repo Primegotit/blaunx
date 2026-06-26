@@ -40,9 +40,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blaunx</title>
-    <link rel="stylesheet" href="global.css ">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="/global.css ">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/services.css">
+    <link rel="stylesheet" href="addservice.css">
 
 </head>
 <body>
