@@ -252,6 +252,14 @@ nav h3{
 
 
 
+.music1{
+  background: url(images//rob-wingate-UG9LOi8BJWQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 .title {
   color: var(--primary-color);
   font-size: 1.125rem;

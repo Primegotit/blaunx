@@ -11,15 +11,16 @@
             'title' => 'Christ is the author of our profession',
             'release_date' => 'November 2025',
             'type' => 'JPG',
-            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator'
-
+            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
+            'url_instagram' => '#'
         ],
         [
             'id' => '2',
             'title' => "I am what they don't see",
             'release_date' => 'September 2025',
             'type' => 'PNG',
-            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator'
+            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
+            'url_instagram' => '#'
 
         ],
         [
@@ -27,7 +28,8 @@
             'title' => "Loneliness of expertise",
             'release_date' => 'February 2026',
             'type' => 'PNG',
-            'tools' => 'Adobe Photoshop, Blender, Adobe Illustrator'
+            'tools' => 'Adobe Photoshop, Blender, Adobe Illustrator',
+            'url_instagram' => '#'
 
         ]
     ];
@@ -58,6 +60,47 @@
             'release_date' => 'November 2025',
             'languages' => 'HTML, CSS, PHP, JS, Bootstrap',
             'url' => 'https://trackwayapp.vercel.app/'
+        ]
+    ];
+
+    $music_card = [
+        [
+            'id' => '1',
+            'title' => "Spotlight - Da'Blocks & Primegotit ft Limzy M",
+            'album' => "I am what they don't see",
+            'genre' => "HipHop/Trap",
+            'duration' => '3:21',
+            'release_date' => '2025',
+            'url_youtube' => '#',
+            'url_spotify' => '#',
+            'url_soundcloud' => '#',
+            'url_audiomack' => '#'
+
+        ],
+        [
+            'id' => '2',
+            'title' => "Memories - Da'Blocks & Primegotit ft Limzy M",
+            'album' => "I am what they don't see",
+            'genre' => "HipHop/Trap",
+            'duration' => '3:02',
+            'release_date' => '2024',
+            'url_youtube' => '#',
+            'url_spotify' => '#',
+            'url_soundcloud' => '#',
+            'url_audiomack' => '#'
+            
+        ],
+        [
+            'id' => '3',
+            'title' => "Ben Frank - Trvppy Tee & Primegotit",
+            'album' => "I am what they don't see",
+            'genre' => "HipHop/Trap",
+            'duration' => '3:54',
+            'release_date' => '2026',
+            'url_youtube' => '#',
+            'url_spotify' => '#',
+            'url_soundcloud' => '#',
+            'url_audiomack' => '#'
         ]
     ];
 ?>
@@ -157,8 +200,7 @@
                                     <li class="desc">Tools used - <?php echo $card['tools'] ?></li>
                                 </ul>
                                 <div class="social-btn-con">
-                                    <a class="action" href="#">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="#">Instagram<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url_instagram'] ?>">Instagram<span aria-hidden="true">→</span></a>
 
                                 </div>
                             </div>
@@ -168,6 +210,47 @@
 
                 </div>
                 <!-- End of GRAPHIC DESIGN SECTION-->
+
+
+                <!--  MUSIC PRODUCTION SECTION -->
+
+                <div class="skill-container">
+                    <div class="skill-top-banner">
+                        <h3>Music production</h3>
+                    </div>
+                    <div class="skill-con">
+
+                    <?php foreach($music_card as $card):?>
+                        <div class="card">
+                            <div class="image music1"></div>
+
+                            <div class="content">
+                                <a href="#" class="full-title">
+                                    <span class="title">
+                                        <?php echo $card['title'] ?>
+                                    </span>
+                                </a>
+                                <ul>
+                                    <li class="desc">Album - <?php echo $card['album'] ?></li>
+                                    <li class="desc">Genre - <?php echo $card['genre'] ?></li>
+                                    <li class="desc">Release Date - <?php echo $card['release_date'] ?></li>
+                                    <li class="desc">Duration - <?php echo $card['duration'] ?></li>
+                                </ul>
+                                <div class="social-btn-con">
+                                    <a class="action" href="<?php echo $card['url_youtube'] ?>">YT<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url_spotify'] ?>">Spotify<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url_soundcloud'] ?>">SCloud<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url_audiomack'] ?>">Amack<span aria-hidden="true">→</span></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+
+                </div>
+                <!-- End of MUSIC PRODUCTION SECTION-->
+
 
 
             </div>
