@@ -58,7 +58,7 @@
 
             <div class="form-container">
                 <div class="form-top-banner">
-                    <h3>Enter or edit a service</h3>
+                    <h3>Manage all the services offered</h3>
                 </div>
 
                 <form action="" method="POST" class="card service-form" >
@@ -125,7 +125,7 @@
 
                 <div class="skill-container">
                     <div class="skill-top-banner">
-                        <h3>Web development</h3>
+                        <h3>Services</h3>
                     </div>
 
                     <div class="skill-con">

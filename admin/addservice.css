@@ -102,7 +102,7 @@ nav h3{
 }
 
 .form-container{
-    width: 50%;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +120,7 @@ nav h3{
     font-weight: 300;
 }
 .service-form{
-    min-width: 80%;
+    min-width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +132,7 @@ nav h3{
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    width: 70%;
+    width: 100%;
     gap: 6px;
     margin-bottom: 10px;
 }
@@ -321,7 +321,19 @@ nav h3{
 }
 
 @media(max-width: 960px){
+.form-container{
+    width: 80%;
 
+
+}
+
+.service-form{
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent ;
+}
 .skill-con{
     display: flex;
     width: 100%;
@@ -358,6 +370,37 @@ nav h3{
 }
 
 @media(max-width: 540px){
+.form-container{
+    width: 90%;
+
+}
+.service-form{
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent ;
+}
+
+.skill-con{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.social-btn-con{
+  display: flex;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+}
 
 .card {
     max-width: 100%;
@@ -369,7 +412,7 @@ nav h3{
     padding: 1.1rem;
     gap: 10px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 
