@@ -260,6 +260,14 @@ nav h3{
 
 
 
+.model1{
+  background: url(images/Untitled.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 .title {
   color: var(--primary-color);
   font-size: 1.125rem;

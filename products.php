@@ -103,6 +103,35 @@
             'url_audiomack' => '#'
         ]
     ];
+
+    $model_card = [
+        [
+            'id' => '1',
+            'title' => "Where i reside",
+            'release_date' => 'November 2025',
+            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
+            'url_youtube' => '#',
+            'url_instagram' => '#'
+
+        ],
+        [
+            'id' => '2',
+            'title' => "Fear the Lord",
+            'release_date' => 'April 2026',
+            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
+            'url_youtube' => '#',
+            'url_instagram' => '#'
+            
+        ],
+        [
+            'id' => '3',
+            'title' => "Setup for rendering",
+            'release_date' => 'June 2026',
+            'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
+            'url_youtube' => '#',
+            'url_instagram' => '#'
+        ]
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -251,6 +280,41 @@
                 </div>
                 <!-- End of MUSIC PRODUCTION SECTION-->
 
+
+                <!--  3D MODELLING SECTION -->
+
+                <div class="skill-container">
+                    <div class="skill-top-banner">
+                        <h3>3D Modelling</h3>
+                    </div>
+                    <div class="skill-con">
+
+                    <?php foreach($model_card as $card):?>
+                        <div class="card">
+                            <div class="image model1"></div>
+
+                            <div class="content">
+                                <a href="#" class="full-title">
+                                    <span class="title">
+                                        <?php echo $card['title'] ?>
+                                    </span>
+                                </a>
+                                <ul>
+                                    <li class="desc">Release Date - <?php echo $card['release_date'] ?></li>
+                                    <li class="desc">Tools - <?php echo $card['tools'] ?></li>
+                                </ul>
+                                <div class="social-btn-con">
+                                    <a class="action" href="<?php echo $card['url_youtube'] ?>">YouTube<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url_instagram'] ?>">Instagram<span aria-hidden="true">→</span></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+
+                </div>
+                <!-- End of 3D MODELLING SECTION-->
 
 
             </div>
