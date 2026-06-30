@@ -1,38 +1,9 @@
-<?php
+<?php 
+    include '../config/database.php';
 
-    $service_card = [
-        [
-            'title' => 'Music production',
-            'description' => 'Music Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, pocxcbssimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ],
-        [
-            'title' => 'Web development',
-            'description' => 'Web Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possadfdssimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ],
-        [
-            'title' => '3D Modelling',
-            'description' => 'Modelling Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ],
-        [
-            'title' => 'Graphic Design',
-            'description' => 'Graphic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ],
-        [
-            'title' => 'Ethical Hacking',
-            'description' => 'Ethical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ]
-    ];
-?>
+
+ ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -100,21 +71,26 @@
                     $service_desc = $_POST['service_desc'];
                     $service_url = $_POST['service_url'];
                     // $service_img = $_POST['service_img'];
-                    $btn_add = $_POST['btn_add'];
-                    // $btn_edit = $_POST['btn_edit'];
-                    // $btn_delete = $_POST['btn_delete'];
-                        // $service_card[] =  [
-                        //     'title' => $service_name,
-                        //     'description' => $service_desc,
-                        //     'url' => $service_url
-                        // ];
-                    if(isset($btn_add)){
 
-                        $service_card[] =  [
-                            'title' => $service_name,
-                            'description' => $service_desc,
-                            'url' => $service_url
-                        ];
+                    if(isset($_POST['btn_add'])){
+
+                        $sql_insert = "INSERT INTO services(id, title, description, url, image) VALUES ('','$service_name','$service_desc','$service_url','#');";
+                        mysqli_query($conn, $sql_insert);
+
+                    }
+
+                    if(isset($_POST['btn_edit'])){
+
+                        $sql_update = "UPDATE `services` SET  description='$service_desc', url='$service_url', image='#' WHERE title='$service_name';";
+                        mysqli_query($conn, $sql_update);
+
+                    }
+
+                    if(isset($_POST['btn_delete'])){
+
+                        $sql_delete = "DELETE FROM `services` WHERE title='$service_name';";
+                        mysqli_query($conn, $sql_delete);
+
                     }
 
                 }
@@ -129,6 +105,13 @@
                     </div>
 
                     <div class="skill-con">
+
+                        <?php 
+      
+                            $sql = "SELECT * FROM services";
+                            $service_card = mysqli_query($conn,$sql);
+
+                        ?>
                         <?php foreach($service_card as $card):?>
                         
                             <div class="card">

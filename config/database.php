@@ -4,12 +4,11 @@
     define('PASSWORD', '');
     define('DATABASE', 'blaunx');
 
-    $conn = new mysqli(HOST,USERNAME,PASSWORD,DATABASE);
-
+    $conn = mysqli_connect(HOST,USERNAME,PASSWORD,DATABASE);
+    
     if($conn->connect_error){
         die('Connection Failed' . $conn->connect_error);
 
     }
-    echo "Connected!";
 
 ?>

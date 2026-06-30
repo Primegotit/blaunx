@@ -8,6 +8,7 @@
     $image_card = [
         [
             'id' => '1',
+            'service_name' => 'Graphic Design',
             'title' => 'Christ is the author of our profession',
             'release_date' => 'November 2025',
             'type' => 'JPG',
@@ -16,6 +17,7 @@
         ],
         [
             'id' => '2',
+            'service_name' => 'Graphic Design',
             'title' => "I am what they don't see",
             'release_date' => 'September 2025',
             'type' => 'PNG',
@@ -25,6 +27,7 @@
         ],
         [
             'id' => '3',
+            'service_name' => 'Graphic Design',
             'title' => "Loneliness of expertise",
             'release_date' => 'February 2026',
             'type' => 'PNG',
@@ -38,6 +41,7 @@
     $web_card = [
         [
             'id' => '1',
+            'service_name' => 'Web development',
             'title' => 'Primegotit',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
             'release_date' => 'November 2025',
@@ -46,6 +50,7 @@
         ],
         [
             'id' => '2',
+            'service_name' => 'Web development',
             'title' => 'Kostic',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
             'release_date' => 'November 2025',
@@ -55,6 +60,7 @@
         ],
         [
             'id' => '3',
+            'service_name' => 'Web development',
             'title' => 'Trackway',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium',
             'release_date' => 'November 2025',
@@ -66,6 +72,7 @@
     $music_card = [
         [
             'id' => '1',
+            'service_name' => 'Music production',
             'title' => "Spotlight - Da'Blocks & Primegotit ft Limzy M",
             'album' => "I am what they don't see",
             'genre' => "HipHop/Trap",
@@ -79,6 +86,7 @@
         ],
         [
             'id' => '2',
+            'service_name' => 'Music production',
             'title' => "Memories - Da'Blocks & Primegotit ft Limzy M",
             'album' => "I am what they don't see",
             'genre' => "HipHop/Trap",
@@ -89,9 +97,11 @@
             'url_soundcloud' => '#',
             'url_audiomack' => '#'
             
+            
         ],
         [
             'id' => '3',
+            'service_name' => 'Music production',
             'title' => "Ben Frank - Trvppy Tee & Primegotit",
             'album' => "I am what they don't see",
             'genre' => "HipHop/Trap",
@@ -107,6 +117,7 @@
     $model_card = [
         [
             'id' => '1',
+            'service_name' => '3D Modelling',
             'title' => "Where i reside",
             'release_date' => 'November 2025',
             'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
@@ -116,6 +127,7 @@
         ],
         [
             'id' => '2',
+            'service_name' => '3D Modelling',
             'title' => "Fear the Lord",
             'release_date' => 'April 2026',
             'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
@@ -125,7 +137,7 @@
         ],
         [
             'id' => '3',
-            'title' => "Setup for rendering",
+            'service_name' => '3D Modelling',
             'release_date' => 'June 2026',
             'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
             'url_youtube' => '#',
