@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 30, 2026 at 01:03 PM
+-- Generation Time: Jul 01, 2026 at 02:56 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -24,35 +24,49 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `graphic-design`
+-- Table structure for table `services`
 --
 
-CREATE TABLE `graphic-design` (
+CREATE TABLE `services` (
   `id` int(11) NOT NULL,
-  `filename` varchar(255) NOT NULL,
-  `mime_type` varchar(255) NOT NULL,
-  `image_data` mediumblob NOT NULL
+  `title` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `icon_class` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `title`, `description`, `url`, `image`, `icon_class`) VALUES
+(1, 'Music production', 'Music Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, pocxcbssimus pariatur animi temporibus nesciunt praesentium ', '#', '#', 'fa-solid fa-headphones'),
+(2, 'Web development', 'Web Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possadfdssimus pariatur animi temporibus nesciunt praesentium ', '#', '#', 'fa-solid fa-code'),
+(3, '3D Modelling', 'Modelling Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium', '#', '#', 'fa-solid fa-cube'),
+(4, 'Graphic Design', 'Graphic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium', '#', '#', 'fa-solid fa-palette'),
+(5, 'Ethical Hacking', 'Ethical hacking Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium', '#', '#', 'fa-solid fa-headphones');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `graphic-design`
+-- Indexes for table `services`
 --
-ALTER TABLE `graphic-design`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `services`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `title` (`title`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `graphic-design`
+-- AUTO_INCREMENT for table `services`
 --
-ALTER TABLE `graphic-design`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `services`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

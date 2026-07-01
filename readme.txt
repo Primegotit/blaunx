@@ -1,0 +1,1 @@
+Always remember to take the database from the config folder and import it into xampp in order for the website to work
