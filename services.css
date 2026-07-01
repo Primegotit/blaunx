@@ -46,6 +46,19 @@
 
 }
 
+nav i{
+  font-size: 17px ;
+  margin: 0px 7px;
+  color: var(--primary-color);
+}
+
+
+.title i{
+  font-size: 17px ;
+  margin: 0px 7px;
+  color: var(--primary-color);
+}
+
 
 nav h3{
     font-weight: 800;

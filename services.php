@@ -1,38 +1,10 @@
-<?php
+<?php 
+    include './config/database.php';
 
-    $service_card = [
-        [
-            'title' => 'Music production',
-            'description' => 'Music Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ],
-        [
-            'title' => 'Web development',
-            'description' => 'Web Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ],
-        [
-            'title' => '3D Modelling',
-            'description' => 'Modelling Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ],
-        [
-            'title' => 'Graphic Design',
-            'description' => 'Graphic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ],
-        [
-            'title' => 'Ethical Hacking',
-            'description' => 'Ethical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium ',
-            'url' => '#'
-        ]
-    ];
-?>
+
+ ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,6 +15,7 @@
     <link rel="stylesheet" href="global.css ">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="./images/icons/fontawesome/css/all.min.css">
 
 </head>
 <body>
@@ -53,10 +26,18 @@
     <div id="page2">
         <div id="page1-container">
             <nav>
-                <a href="#">Services</a>
-                <a href="products.php">Products</a>
+                <a href="#">Services <i class="fa-solid fa-briefcase"></i></a>
+                <a href="products.php">Products <i class="fa-solid fa-boxes-stacked"></i></a>
 
             </nav>
+
+            
+            <?php 
+      
+                $sql = "SELECT * FROM services";
+                $service_card = mysqli_query($conn,$sql);
+
+            ?>
             <div id="services-box">
 
                 <?php foreach($service_card as $card):?>
@@ -68,7 +49,7 @@
                             <a href="#">
                                 <span class="title">
                                     <?php echo $card['title'] ?>
-
+                                    <i class="<?php echo $card['icon_class'] ?>"></i>
                                 </span>
                             </a>
 
