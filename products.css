@@ -21,6 +21,7 @@
     padding: 20px;
 }
 
+
 #page3 nav{
   display: flex;
   justify-content: center;
@@ -45,6 +46,14 @@
   color: var(--text-color);
 
 }
+
+
+nav i{
+  font-size: 17px ;
+  margin: 0px 7px;
+  color: var(--primary-color);
+}
+
 
 
 nav h3{
@@ -123,6 +132,12 @@ nav h3{
 
 }
 
+.skill-top-banner i{
+  font-size: 20px ;
+  margin: 0px 7px;
+  color: var(--primary-color);
+}
+
 .skill-con{
     display: flex;
     width: 100%;
@@ -151,6 +166,7 @@ nav h3{
   padding: 1.1rem;
 
 }
+
 
 .image {
   object-fit: cover;
@@ -275,6 +291,12 @@ nav h3{
   font-weight: 600;
 }
 
+.title i{
+  font-size: 17px ;
+  margin: 0px 7px;
+  color: var(--primary-color);
+}
+
 .desc {
   margin-top: 0.5rem;
   color: #6B7280;
@@ -283,10 +305,19 @@ nav h3{
 }
 
 .social-btn-con{
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 0px 8px;
+  /* padding: 0px 8px; */
   gap: 10px;
+}
+
+.social-btn-con a{
+  background: transparent;
+}
+
+i{
+  font-size: 30px;
+  color: gray;
 }
 
 

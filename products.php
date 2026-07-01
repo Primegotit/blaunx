@@ -138,6 +138,7 @@
         [
             'id' => '3',
             'service_name' => '3D Modelling',
+            'title' => 'Noir space',
             'release_date' => 'June 2026',
             'tools' => 'Blender, Adobe Photoshop, Adobe Illustrator',
             'url_youtube' => '#',
@@ -157,7 +158,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="products.css">
-
+    <link rel="stylesheet" href="./images/icons/fontawesome/css/all.min.css">
 
 </head>
 
@@ -169,8 +170,9 @@
     <div id="page3">
         <div id="page1-container">
             <nav>
-                <a href="services.php">Services</a>
-                <a href="#">Products</a>
+                                        
+                <a href="services.php">Services <i class="fa-solid fa-briefcase"></i></a>
+                <a href="#">Products <i class="fa-solid fa-boxes-stacked"></i></a>
 
             </nav>
             <div id="services-box">
@@ -180,7 +182,7 @@
 
                 <div class="skill-container">
                     <div class="skill-top-banner">
-                        <h3>Web development</h3>
+                        <h3>Web development <i class="fa-solid fa-code"></i></h3>
                     </div>
                     <div class="skill-con">
                     <?php foreach($web_card as $card):?>
@@ -192,6 +194,8 @@
                                 <a href="#" class="full-title">
                                     <span class="title">
                                        <?php echo $card['title'] ?>
+                                        <i class="fa-solid fa-terminal"></i>
+
                                     </span>
                                 </a>
 
@@ -205,7 +209,7 @@
                                     Languages used - <?php echo $card['languages'] ?>
                                 </p>
                                 <div class="social-btn-con">
-                                    <a class="action" href="<?php echo $card['url'] ?>">View website<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url'] ?>"><i class="fa-solid fa-arrow-up-right-from-square"></i><span aria-hidden="true"></span></a>
 
                                 </div>
                             </div>
@@ -221,7 +225,7 @@
 
                 <div class="skill-container">
                     <div class="skill-top-banner">
-                        <h3>Graphic Design</h3>
+                        <h3>Graphic Design <i class="fa-solid fa-palette"></i></h3>
                     </div>
                     <div class="skill-con">
 
@@ -233,6 +237,8 @@
                                 <a href="#" class="full-title">
                                     <span class="title">
                                         <?php echo $card['title'] ?>
+                                        <i class="fa-solid fa-image"></i>
+
                                     </span>
                                 </a>
                                 <ul>
@@ -241,7 +247,7 @@
                                     <li class="desc">Tools used - <?php echo $card['tools'] ?></li>
                                 </ul>
                                 <div class="social-btn-con">
-                                    <a class="action" href="<?php echo $card['url_instagram'] ?>">Instagram<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url_instagram'] ?>"><i class="fa-brands fa-instagram"></i><span aria-hidden="true"></span></a>
 
                                 </div>
                             </div>
@@ -257,7 +263,7 @@
 
                 <div class="skill-container">
                     <div class="skill-top-banner">
-                        <h3>Music production</h3>
+                        <h3>Music production <i class="fa-solid fa-headphones"></i></h3>
                     </div>
                     <div class="skill-con">
 
@@ -269,6 +275,7 @@
                                 <a href="#" class="full-title">
                                     <span class="title">
                                         <?php echo $card['title'] ?>
+                                        <i class="fa-solid fa-music"></i>
                                     </span>
                                 </a>
                                 <ul>
@@ -277,11 +284,11 @@
                                     <li class="desc">Release Date - <?php echo $card['release_date'] ?></li>
                                     <li class="desc">Duration - <?php echo $card['duration'] ?></li>
                                 </ul>
+                                <!-- <h4>Listen using any platform</h4> -->
                                 <div class="social-btn-con">
-                                    <a class="action" href="<?php echo $card['url_youtube'] ?>">YT<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="<?php echo $card['url_spotify'] ?>">Spotify<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="<?php echo $card['url_soundcloud'] ?>">SCloud<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="<?php echo $card['url_audiomack'] ?>">Amack<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url_youtube'] ?>"><i class="fa-brands fa-youtube"></i><span aria-hidden="true"></span></a>
+                                    <a class="action" href="<?php echo $card['url_spotify'] ?>"><i class="fa-brands fa-spotify"></i><span aria-hidden="true"></span></a>
+                                    <a class="action" href="<?php echo $card['url_soundcloud'] ?>"><i class="fa-brands fa-soundcloud"></i><span aria-hidden="true"></span></a>
 
                                 </div>
                             </div>
@@ -297,7 +304,7 @@
 
                 <div class="skill-container">
                     <div class="skill-top-banner">
-                        <h3>3D Modelling</h3>
+                        <h3>3D Modelling <i class="fa-solid fa-cube"></i></h3>
                     </div>
                     <div class="skill-con">
 
@@ -309,6 +316,7 @@
                                 <a href="#" class="full-title">
                                     <span class="title">
                                         <?php echo $card['title'] ?>
+                                        <i class="fa-solid fa-cubes"></i>
                                     </span>
                                 </a>
                                 <ul>
@@ -316,8 +324,8 @@
                                     <li class="desc">Tools - <?php echo $card['tools'] ?></li>
                                 </ul>
                                 <div class="social-btn-con">
-                                    <a class="action" href="<?php echo $card['url_youtube'] ?>">YouTube<span aria-hidden="true">→</span></a>
-                                    <a class="action" href="<?php echo $card['url_instagram'] ?>">Instagram<span aria-hidden="true">→</span></a>
+                                    <a class="action" href="<?php echo $card['url_youtube'] ?>"><i class="fa-brands fa-youtube"></i><span aria-hidden="true"></span></a>
+                                    <a class="action" href="<?php echo $card['url_instagram'] ?>"><i class="fa-brands fa-instagram"></i><span aria-hidden="true"></span></a>
 
                                 </div>
                             </div>
