@@ -53,6 +53,33 @@ nav h3{
     
 }
 
+.social-btn-con a{
+  /* background: transparent; */
+}
+
+i{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin: 0px 5px;
+}
+
+
+
+nav i{
+  font-size: 17px ;
+  margin: 0px 7px;
+  color: var(--primary-color);
+}
+
+
+.title i{
+  font-size: 17px ;
+  margin: 0px 7px;
+  color: var(--primary-color);
+}
+
+
+
 #services-box{
     width: 96%;
     display: flex;
@@ -151,6 +178,16 @@ nav h3{
     color: var(--text-color);
 }
 
+.social-btn-con{
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 15px;
+}
+.social-btn-con button{
+  padding:10px 15px;
+
+}
 
 
 .skill-container{
@@ -215,7 +252,7 @@ nav h3{
 }
 
 .card a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 #page2-admin-container .full-title{
@@ -278,12 +315,7 @@ nav h3{
   line-height: 1.25rem;
 }
 
-.social-btn-con{
-  display: inline-flex;
-  align-items: center;
-  padding: 0px 8px;
-  gap: 10px;
-}
+
 
 
 
@@ -421,5 +453,34 @@ nav h3{
     border-radius: 0.5rem;
 
 }
+
+.social-btn-con button{
+  padding:5px 9px;
+
+}
+
+    .social-btn-con i{
+        margin: 2px;
+    }
+}
+
+@media(max-width: 390px){
+.form-container{
+    width: 100%;
+
+}
+.social-btn-con{
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 3px;
+}
+    .social-btn-con button{
+        padding:5px 9px;
+
+    }
+    .social-btn-con i{
+        margin: 2px;
+    }
 }
 

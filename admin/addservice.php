@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../global.css ">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="addservice.css">
+    <link rel="stylesheet" href="../images/icons/fontawesome/css/all.min.css">
 
 </head>
 <body>
@@ -24,15 +25,15 @@
     <div id="page2-admin">
         <div id="page2-admin-container">
             <nav>
-                <a href="#">Services</a>
+                <a href="#">Services <i class="fa-solid fa-briefcase"></i></a>
             </nav>
 
-            <div class="form-container">
+            <div class="form-container " id="myform">
                 <div class="form-top-banner">
                     <h3>Manage all the services offered</h3>
                 </div>
 
-                <form action="" method="POST" class="card service-form" >
+                <form action="" method="POST" class="card service-form"  >
                     
                     <div class="input-container">
                         <label for="">Service name</label>
@@ -49,15 +50,20 @@
                         <input type="text" name="service_url">
                     </div>
 
+
+                    <div class="input-container">
+                        <label for="">Icon class</label>
+                        <input type="text" name="icon_class">
+                    </div>
                     <!-- <div class="input-container">
                         <label for="">Image</label>
                         <input type="file" name="service_img" accept="image/*">
                     </div> -->
                     
                     <div class="social-btn-con">
-                        <button class="action" name="btn_add" type="submit">Add<span aria-hidden="true">→</span></a>
-                        <button class="action" name="btn_edit" type="submit">Edit<span aria-hidden="true">→</span></a>
-                        <button class="action" name="btn_delete" type="submit">Delete<span aria-hidden="true">→</span></a>
+                        <button class="action" name="btn_add" type="submit">Add <i class="fa-solid fa-plus"><span aria-hidden="true"></i></span></a>
+                        <button class="action" name="btn_edit" type="submit">Edit<i class="fa-solid fa-pen"><span aria-hidden="true"></i></span></a>
+                        <button class="action" name="btn_delete" type="submit">Delete<i class="fa-solid fa-trash"><span aria-hidden="true"></i></span></a>
                     </div>
 
                 </form>
@@ -70,18 +76,20 @@
                     $service_name = $_POST['service_name'];
                     $service_desc = $_POST['service_desc'];
                     $service_url = $_POST['service_url'];
+                    $icon_class = $_POST['icon_class'];
+                    
                     // $service_img = $_POST['service_img'];
 
                     if(isset($_POST['btn_add'])){
 
-                        $sql_insert = "INSERT INTO services(id, title, description, url, image) VALUES ('','$service_name','$service_desc','$service_url','#');";
+                        $sql_insert = "INSERT INTO services(id, title, description, url, image, icon_class) VALUES ('','$service_name','$service_desc','$service_url','#', '$icon_class');";
                         mysqli_query($conn, $sql_insert);
 
                     }
 
                     if(isset($_POST['btn_edit'])){
 
-                        $sql_update = "UPDATE `services` SET  description='$service_desc', url='$service_url', image='#' WHERE title='$service_name';";
+                        $sql_update = "UPDATE `services` SET  description='$service_desc', url='$service_url', image='#' , icon_class='$icon_class'  WHERE title='$service_name';";
                         mysqli_query($conn, $sql_update);
 
                     }
@@ -101,7 +109,7 @@
 
                 <div class="skill-container">
                     <div class="skill-top-banner">
-                        <h3>Services</h3>
+                        <h3>Services <i class="fa-solid fa-briefcase"></i></h3>
                     </div>
 
                     <div class="skill-con">
@@ -121,6 +129,7 @@
                                     <a href="#" class="full-title">
                                         <span class="title">
                                             <?php echo $card['title'] ?>
+                                            <i class="<?php echo $card['icon_class'] ?>"></i>
 
                                         </span>
                                     </a>
@@ -130,8 +139,8 @@
                                     </p>
 
                                     <div class="social-btn-con">
-                                        <a class="action" href="<?php echo $card['url'] ?>">Edit<span aria-hidden="true">→</span></a>
-                                        <a class="action" href="<?php echo $card['url'] ?>">Delete<span aria-hidden="true">→</span></a>
+                                        <a class="action" href="#myform">Edit<span aria-hidden="true">→</span></a>
+                                        <!-- <a class="action" href="<?php echo $card['url'] ?>">Delete<span aria-hidden="true">→</span></a> -->
 
                                     </div>
                                     
